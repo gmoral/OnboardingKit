@@ -110,4 +110,20 @@ class ViewController: UIViewController, OnboardingKitDelegate {
       completion: nil)
   }
 }
+
+class AnotherViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    
+        let label = UILabel()
+        label.text = "Main View Controller"
+        view.addSubview(label)
+        label.snp.makeConstraints { make in
+            make.center.equalTo(view)
+        }
+        view.backgroundColor = .white
+    }
+}
+
 ```
