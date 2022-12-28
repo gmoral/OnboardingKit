@@ -35,7 +35,7 @@ public class OnboardingKit {
         self.tintColor = tintColor
     }
     
-    public func launchOnbording(rootVC: UIViewController) {
+    public func launchOnboarding(rootVC: UIViewController) {
         self.rootVC = rootVC
         rootVC.present(onboardingViewController, animated: true, completion: nil)
     }

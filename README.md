@@ -59,15 +59,15 @@ class ViewController: UIViewController, OnboardingKitDelegate {
       self.onboardingKit = OnboardingKit(
         slides: [
           .init(image: UIImage(named: "imSlide1")!,
-                title: "Personalised offers at 40,000+ places"),
+            title: "Curry Garden, 89 Rue de Bagnolet - Paris "),
           .init(image: UIImage(named: "imSlide2")!,
-                title: "Stack your rewards every time you pay"),
+            title: "Moom Mam, 19 Rue de Mogador - Paris"),
           .init(image: UIImage(named: "imSlide3")!,
-                title: "Enjoy now, FavePay Later"),
+            title: "Les 3 Bornés, 71 Rue Jean-Pierre Timbaud - Paris"),
           .init(image: UIImage(named: "imSlide4")!,
-                title: "Earn cashback with your physical card"),
+            title: "Swadee, 20 Rue du Débarcadère - Paris"),
           .init(image: UIImage(named: "imSlide5")!,
-                title: "Save and earn cashback with Deals or eCards")
+            title: "Meating Corner, 8 Rue des Lombards - Paris")
         ],
         tintColor: UIColor(red: 220/255, green: 20/255, blue: 60/255, alpha: 1.0))
       self.onboardingKit?.delegate = self
