@@ -69,7 +69,7 @@ class ViewController: UIViewController, OnboardingKitDelegate {
           .init(image: UIImage(named: "imSlide5")!,
             title: "Meating Corner, 8 Rue des Lombards - Paris")
         ],
-        tintColor: UIColor(red: 220/255, green: 20/255, blue: 60/255, alpha: 1.0))
+        tintColor: UIColor(red: 220/255, green: 20/255, blue: 60/255, alpha: 1.0), themeFont: UIFont(name: "Kailasa Bold", size: 28) ?? .systemFont(ofSize: 28, weight: .bold))
       self.onboardingKit?.delegate = self
       self.onboardingKit?.launchOnboarding(rootVC: self)
     }
@@ -83,7 +83,7 @@ class ViewController: UIViewController, OnboardingKitDelegate {
   func getStartedButtonDidTap() {
     onboardingKit?.dismissOnboarding()
     onboardingKit = nil
-    transit(viewController: AnotherViewController())
+    transit(viewController: MainViewController())
   }
   
   private func transit(viewController: UIViewController) {
@@ -111,7 +111,7 @@ class ViewController: UIViewController, OnboardingKitDelegate {
   }
 }
 
-class AnotherViewController: UIViewController {
+class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

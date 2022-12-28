@@ -7,6 +7,7 @@ public protocol OnboardingKitDelegate: AnyObject {
 
 public class OnboardingKit {
     
+    private let themeFont : UIFont
     private let slides: [Slide]
     private let tintColor : UIColor
     private var rootVC : UIViewController?
@@ -15,7 +16,7 @@ public class OnboardingKit {
     
     // Lazy call after initialize FavOnbordingKit
     private lazy var onboardingViewController :  OnboardingViewController = {
-        let controller = OnboardingViewController(slides: slides, tintColor: tintColor)
+        let controller = OnboardingViewController(slides: slides, tintColor: tintColor, themeFont: themeFont)
         controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .fullScreen
         
@@ -30,9 +31,10 @@ public class OnboardingKit {
         return controller
     }()
     
-    public init(slides: [Slide], tintColor: UIColor) {
+    public init(slides: [Slide], tintColor: UIColor, themeFont: UIFont = UIFont(name: "ArialRoundedMTBold", size: 28) ?? UIFont.systemFont(ofSize: 28, weight: .bold)) {
         self.slides = slides
         self.tintColor = tintColor
+        self.themeFont = themeFont
     }
     
     public func launchOnboarding(rootVC: UIViewController) {
