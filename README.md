@@ -2,7 +2,7 @@
 
 OnboardingKit provides an onboarding flow that is simple and easy to implement.
 
-![myfile](https://github.com/gmoral/OnbordingKit/blob/master/demo.gif)
+![myfile](https://github.com/gmoral/OnboardingKit/blob/master/demo.gif)
 
 
 ## Contents
