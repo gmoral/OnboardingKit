@@ -37,7 +37,7 @@ dependencies: [
 
 ### Manually
 
-If you prefer not to use Swift Package Manager, you can integrate FavOnboardingKit into your project manually.
+If you prefer not to use Swift Package Manager, you can integrate OnboardingKit into your project manually.
 
 ---
 
